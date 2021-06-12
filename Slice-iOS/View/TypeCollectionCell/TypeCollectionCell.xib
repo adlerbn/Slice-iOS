@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TypeCollectionCell" customModule="Slice_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="223"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-i6-lbk" userLabel="SubView">
+                        <rect key="frame" x="0.0" y="0.0" width="153" height="223"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIj-jr-lXD">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="223"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zw8-py-FYb">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="223"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VKS-sZ-GXX">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="111.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb8-GA-PCe">
+                                                <rect key="frame" x="0.0" y="111.5" width="153" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Zw8-py-FYb" secondAttribute="bottom" id="0K4-88-YjH"/>
+                                    <constraint firstItem="Zw8-py-FYb" firstAttribute="top" secondItem="bIj-jr-lXD" secondAttribute="top" id="KCv-7R-SGy"/>
+                                    <constraint firstItem="Zw8-py-FYb" firstAttribute="leading" secondItem="bIj-jr-lXD" secondAttribute="leading" id="gJF-Zi-tUh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zw8-py-FYb" secondAttribute="trailing" id="pRA-Tm-FBx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bIj-jr-lXD" firstAttribute="top" secondItem="hsf-i6-lbk" secondAttribute="top" id="IFC-3j-Zo6"/>
+                            <constraint firstItem="bIj-jr-lXD" firstAttribute="leading" secondItem="hsf-i6-lbk" secondAttribute="leading" id="aac-G2-Qty"/>
+                            <constraint firstAttribute="trailing" secondItem="bIj-jr-lXD" secondAttribute="trailing" id="jxK-zU-J28"/>
+                            <constraint firstAttribute="bottom" secondItem="bIj-jr-lXD" secondAttribute="bottom" id="map-Cl-dBK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hsf-i6-lbk" secondAttribute="trailing" id="IYs-DM-BzW"/>
+                <constraint firstAttribute="bottom" secondItem="hsf-i6-lbk" secondAttribute="bottom" id="NUH-gy-FnX"/>
+                <constraint firstItem="hsf-i6-lbk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qEZ-w1-AvM"/>
+                <constraint firstItem="hsf-i6-lbk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vqd-x3-iqv"/>
+            </constraints>
+            <size key="customSize" width="153" height="223"/>
+            <point key="canvasLocation" x="215.21739130434784" y="194.53125"/>
+        </collectionViewCell>
+    </objects>
+</document>
