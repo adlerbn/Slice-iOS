@@ -14,6 +14,7 @@
 		491688B02674AAA100107EE3 /* Slice_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 491688AE2674AAA100107EE3 /* Slice_iOS.xcdatamodeld */; };
 		491688B22674AAA300107EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491688B12674AAA300107EE3 /* Assets.xcassets */; };
 		491688B52674AAA300107EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491688B32674AAA300107EE3 /* LaunchScreen.storyboard */; };
+		73DE2C383EB7FFF117F05521 /* Pods_Slice_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6863D9CEE44AF40CC526B61A /* Pods_Slice_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		491688B12674AAA300107EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491688B42674AAA300107EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491688B62674AAA300107EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6863D9CEE44AF40CC526B61A /* Pods_Slice_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slice_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8391EDA73FB77AFF70EA77E7 /* Pods-Slice-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slice-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Slice-iOS/Pods-Slice-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E54267535DA190A27AAD925D /* Pods-Slice-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slice-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Slice-iOS/Pods-Slice-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DE2C383EB7FFF117F05521 /* Pods_Slice_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				491688A42674AAA100107EE3 /* Slice-iOS */,
 				491688A32674AAA100107EE3 /* Products */,
+				DBBEFF9BD061138B887EFC23 /* Pods */,
+				C114F19D235AEE49DA7DD9A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = "Slice-iOS";
 			sourceTree = "<group>";
 		};
+		C114F19D235AEE49DA7DD9A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6863D9CEE44AF40CC526B61A /* Pods_Slice_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBEFF9BD061138B887EFC23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E54267535DA190A27AAD925D /* Pods-Slice-iOS.debug.xcconfig */,
+				8391EDA73FB77AFF70EA77E7 /* Pods-Slice-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 491688B92674AAA300107EE3 /* Build configuration list for PBXNativeTarget "Slice-iOS" */;
 			buildPhases = (
+				A258F10FB0C77ACE41D01DAA /* [CP] Check Pods Manifest.lock */,
 				4916889E2674AAA100107EE3 /* Sources */,
 				4916889F2674AAA100107EE3 /* Frameworks */,
 				491688A02674AAA100107EE3 /* Resources */,
+				210914596F2210F0F8999821 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +160,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210914596F2210F0F8999821 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Slice-iOS/Pods-Slice-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slice-iOS/Pods-Slice-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A258F10FB0C77ACE41D01DAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Slice-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4916889E2674AAA100107EE3 /* Sources */ = {
@@ -287,6 +352,7 @@
 		};
 		491688BA2674AAA300107EE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E54267535DA190A27AAD925D /* Pods-Slice-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +373,7 @@
 		};
 		491688BB2674AAA300107EE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8391EDA73FB77AFF70EA77E7 /* Pods-Slice-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
