@@ -17,6 +17,8 @@
 		4927550E2674E6FE001C1B2C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927550D2674E6FE001C1B2C /* HomeViewController.swift */; };
 		4927551B2674E8A0001C1B2C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927551A2674E8A0001C1B2C /* DetailsViewController.swift */; };
 		4927551F267506E6001C1B2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927551E267506E6001C1B2C /* LoginViewController.swift */; };
+		492AC92B26772B1A00EB4524 /* ItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AC92926772B1A00EB4524 /* ItemCollectionCell.swift */; };
+		492AC92C26772B1A00EB4524 /* ItemCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492AC92A26772B1A00EB4524 /* ItemCollectionCell.xib */; };
 		493384C926750786005578CD /* StarterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493384C826750786005578CD /* StarterViewController.swift */; };
 		495EDCF72675549F000F9489 /* TypeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EDCF52675549F000F9489 /* TypeCollectionCell.swift */; };
 		495EDCF82675549F000F9489 /* TypeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495EDCF62675549F000F9489 /* TypeCollectionCell.xib */; };
@@ -36,6 +38,8 @@
 		4927550D2674E6FE001C1B2C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4927551A2674E8A0001C1B2C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		4927551E267506E6001C1B2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		492AC92926772B1A00EB4524 /* ItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionCell.swift; sourceTree = "<group>"; };
+		492AC92A26772B1A00EB4524 /* ItemCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionCell.xib; sourceTree = "<group>"; };
 		493384C826750786005578CD /* StarterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewController.swift; sourceTree = "<group>"; };
 		495EDCF52675549F000F9489 /* TypeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionCell.swift; sourceTree = "<group>"; };
 		495EDCF62675549F000F9489 /* TypeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCollectionCell.xib; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				491688AB2674AAA100107EE3 /* Main.storyboard */,
 				491688B32674AAA300107EE3 /* LaunchScreen.storyboard */,
 				495EDCFA267554A9000F9489 /* TypeCollectionCell */,
+				492AC92626772AB400EB4524 /* ItemCollectionCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +121,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		492AC92626772AB400EB4524 /* ItemCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				492AC92926772B1A00EB4524 /* ItemCollectionCell.swift */,
+				492AC92A26772B1A00EB4524 /* ItemCollectionCell.xib */,
+			);
+			path = ItemCollectionCell;
 			sourceTree = "<group>";
 		};
 		495EDCFA267554A9000F9489 /* TypeCollectionCell */ = {
@@ -204,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491688B52674AAA300107EE3 /* LaunchScreen.storyboard in Resources */,
+				492AC92C26772B1A00EB4524 /* ItemCollectionCell.xib in Resources */,
 				495EDCF82675549F000F9489 /* TypeCollectionCell.xib in Resources */,
 				491688B22674AAA300107EE3 /* Assets.xcassets in Resources */,
 				491688AD2674AAA100107EE3 /* Main.storyboard in Resources */,
@@ -258,6 +273,7 @@
 			files = (
 				4927551F267506E6001C1B2C /* LoginViewController.swift in Sources */,
 				4927550E2674E6FE001C1B2C /* HomeViewController.swift in Sources */,
+				492AC92B26772B1A00EB4524 /* ItemCollectionCell.swift in Sources */,
 				493384C926750786005578CD /* StarterViewController.swift in Sources */,
 				491688B02674AAA100107EE3 /* Slice_iOS.xcdatamodeld in Sources */,
 				491688AA2674AAA100107EE3 /* RegisterViewController.swift in Sources */,
