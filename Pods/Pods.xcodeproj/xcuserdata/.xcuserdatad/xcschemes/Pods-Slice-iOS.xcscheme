@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FCCABAFF54BBA796F2152DBC08997E30"
+               BlueprintIdentifier = "7E91499DE386B56CEA9E682BAC7B71D3"
                BlueprintName = "Pods-Slice-iOS"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-Slice-iOS.framework">

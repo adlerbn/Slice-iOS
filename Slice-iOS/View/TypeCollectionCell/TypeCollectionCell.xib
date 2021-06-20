@@ -76,6 +76,7 @@
             </constraints>
             <size key="customSize" width="180" height="294"/>
             <connections>
+                <outlet property="subView" destination="hsf-i6-lbk" id="NIU-Nz-evs"/>
                 <outlet property="typeImageView" destination="YPP-B6-VWH" id="cLD-Hj-4sP"/>
                 <outlet property="typeTitleLabel" destination="fsp-dk-nxF" id="OG8-Pr-9Fb"/>
             </connections>

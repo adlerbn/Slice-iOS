@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59" height="21" viewBox="0 0 59 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b7b7b7;
+      }
+
+      .cls-2 {
+        fill: #ddd;
+      }
+    </style>
+  </defs>
+  <g id="Loading" transform="translate(-185 -442)">
+    <circle id="Ellipse_6" data-name="Ellipse 6" class="cls-1" cx="10.5" cy="10.5" r="10.5" transform="translate(204 442)"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" class="cls-2" cx="7" cy="7" r="7" transform="translate(185 445)"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-2" cx="7" cy="7" r="7" transform="translate(230 446)"/>
+  </g>
+</svg>

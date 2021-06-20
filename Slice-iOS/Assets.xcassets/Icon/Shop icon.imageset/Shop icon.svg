@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d2d2d;
+      }
+    </style>
+  </defs>
+  <g id="shop_icon" data-name="shop icon" transform="translate(0 0)">
+    <path id="Ellipse_3" data-name="Ellipse 3" class="cls-1" d="M2-1A3,3,0,1,1-1,2,3,3,0,0,1,2-1ZM2,3A1,1,0,1,0,1,2,1,1,0,0,0,2,3Z" transform="translate(6 19)"/>
+    <path id="Ellipse_4" data-name="Ellipse 4" class="cls-1" d="M2-1A3,3,0,1,1-1,2,3,3,0,0,1,2-1ZM2,3A1,1,0,1,0,1,2,1,1,0,0,0,2,3Z" transform="translate(18 19)"/>
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M19.359,17H8.753a3,3,0,0,1-2.995-2.61L4.239,2.871A1,1,0,0,0,3.248,2H1A1,1,0,0,1,1,0H3.25A3.009,3.009,0,0,1,6.222,2.61L6.537,5H23a1,1,0,0,1,.981,1.2l-1.68,8.39A3,3,0,0,1,19.359,17ZM8.75,15H19.359a1,1,0,0,0,.981-.805L21.78,7H6.8l.941,7.129a1,1,0,0,0,1,.871Z"/>
+  </g>
+</svg>

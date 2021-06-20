@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.479" height="25.182" viewBox="0 0 26.479 25.182">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc0;
+      }
+    </style>
+  </defs>
+  <path id="Star_Icon" data-name="Star Icon" class="cls-1" d="M15.24,2l4.091,8.288,9.149,1.337-6.62,6.448,1.562,9.109-8.182-4.3-8.182,4.3L8.62,18.073,2,11.625l9.149-1.337Z" transform="translate(-2 -2)"/>
+</svg>

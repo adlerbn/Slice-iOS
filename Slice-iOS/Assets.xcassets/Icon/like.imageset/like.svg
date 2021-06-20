@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="35" viewBox="0 0 39 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f36e21;
+        font-size: 35px;
+        font-family: FontAwesome5Free-Regular, 'Font Awesome \35  Free';
+        letter-spacing: -0.03em;
+      }
+    </style>
+  </defs>
+  <text id="like" class="cls-1" transform="translate(2 31)"><tspan x="0" y="0"></tspan></text>
+</svg>

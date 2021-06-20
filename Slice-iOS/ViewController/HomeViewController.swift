@@ -43,12 +43,8 @@ class HomeViewController: UIViewController {
     }()
     
     @IBOutlet weak var typeCollectionView: UICollectionView!
-    
     @IBOutlet weak var discountFoodCollectionView: UICollectionView!
-    
     @IBOutlet weak var favoriteFoodCollectionView: UICollectionView!
-    
-    
     @IBOutlet weak var popularFoodCollectionView: UICollectionView!
     
     let widthScreen: CGFloat = {
@@ -102,9 +98,15 @@ extension HomeViewController {
             forCellWithReuseIdentifier: ItemCollectionCell.identifier
         )
         
-        favoriteFoodCollectionView.register(ItemCollectionCell.nib(), forCellWithReuseIdentifier: ItemCollectionCell.identifier)
+        favoriteFoodCollectionView.register(
+            ItemCollectionCell.nib(),
+            forCellWithReuseIdentifier: ItemCollectionCell.identifier
+        )
         
-        popularFoodCollectionView.register(ItemCollectionCell.nib(), forCellWithReuseIdentifier: ItemCollectionCell.identifier)
+        popularFoodCollectionView.register(
+            ItemCollectionCell.nib(),
+            forCellWithReuseIdentifier: ItemCollectionCell.identifier
+        )
     }
 }
 
@@ -143,7 +145,22 @@ extension HomeViewController: UICollectionViewDataSource {
 //MARK: - UICollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        if collectionView == typeCollectionView {
+            if let cell = collectionView.cellForItem(at: indexPath) as? TypeCollectionCell {
+                
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? TypeCollectionCell {
+            
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        
+        return true
     }
 }
 
@@ -154,9 +171,9 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         
         if collectionView == typeCollectionView {
             return
-                CGSize(width: 100, height: 200)
+                CGSize(width: 100, height: 130)
         }
-            
+        
         return
             CGSize(width: 180, height: 250)
         

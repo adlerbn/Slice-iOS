@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4906782A2678E06D00772E48 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490678292678E06D00772E48 /* CustomTextField.swift */; };
 		491688A62674AAA100107EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491688A52674AAA100107EE3 /* AppDelegate.swift */; };
 		491688A82674AAA100107EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491688A72674AAA100107EE3 /* SceneDelegate.swift */; };
 		491688AA2674AAA100107EE3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491688A92674AAA100107EE3 /* RegisterViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490678292678E06D00772E48 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		491688A22674AAA100107EE3 /* Slice-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slice-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		491688A52674AAA100107EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491688A72674AAA100107EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,12 +62,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490678282678E04B00772E48 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				490678292678E06D00772E48 /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
 		491688992674AAA100107EE3 = {
 			isa = PBXGroup;
 			children = (
 				491688A42674AAA100107EE3 /* Slice-iOS */,
 				491688A32674AAA100107EE3 /* Products */,
-				DBBEFF9BD061138B887EFC23 /* Pods */,
 				C114F19D235AEE49DA7DD9A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +97,7 @@
 				492755122674E713001C1B2C /* ViewController */,
 				491688B12674AAA300107EE3 /* Assets.xcassets */,
 				491688B62674AAA300107EE3 /* Info.plist */,
+				DBBEFF9BD061138B887EFC23 /* Pods */,
 				491688AE2674AAA100107EE3 /* Slice_iOS.xcdatamodeld */,
 			);
 			path = "Slice-iOS";
@@ -108,6 +118,7 @@
 		492755132674E72C001C1B2C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				490678282678E04B00772E48 /* CustomTextField */,
 				491688AB2674AAA100107EE3 /* Main.storyboard */,
 				491688B32674AAA300107EE3 /* LaunchScreen.storyboard */,
 				495EDCFA267554A9000F9489 /* TypeCollectionCell */,
@@ -156,6 +167,7 @@
 				8391EDA73FB77AFF70EA77E7 /* Pods-Slice-iOS.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +247,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Slice-iOS/Pods-Slice-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4927551F267506E6001C1B2C /* LoginViewController.swift in Sources */,
+				4906782A2678E06D00772E48 /* CustomTextField.swift in Sources */,
 				4927550E2674E6FE001C1B2C /* HomeViewController.swift in Sources */,
 				492AC92B26772B1A00EB4524 /* ItemCollectionCell.swift in Sources */,
 				493384C926750786005578CD /* StarterViewController.swift in Sources */,

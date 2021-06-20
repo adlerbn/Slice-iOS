@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="15" viewBox="0 0 112 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fa1f1f;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 10px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+      }
+    </style>
+  </defs>
+  <g id="del_but" data-name="del but" transform="translate(-28 -419)">
+    <path id="Rectangle_42" data-name="Rectangle 42" class="cls-1" d="M0,0H112a0,0,0,0,1,0,0V0A15,15,0,0,1,97,15H15A15,15,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(28 419)"/>
+    <text id="Delete_" data-name="Delete!" class="cls-2" transform="translate(66 430)"><tspan x="0" y="0">Delete!</tspan></text>
+  </g>
+</svg>

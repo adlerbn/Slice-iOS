@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="17" viewBox="0 0 26 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #007d2f;
+        opacity: 0.73;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 8px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+    </style>
+  </defs>
+  <g id="Rate" transform="translate(-106 -255)">
+    <path id="Rectangle_22" data-name="Rectangle 22" class="cls-1" d="M0,0H16A10,10,0,0,1,26,10v7a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(106 255)"/>
+    <text id="_4.8_5" data-name="4.8/5" class="cls-2" transform="translate(109 267)"><tspan x="0" y="0">4.8/5</tspan></text>
+  </g>
+</svg>
