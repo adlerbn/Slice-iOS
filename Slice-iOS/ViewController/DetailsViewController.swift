@@ -13,6 +13,9 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var favoriteView: UIView!
     
     @IBOutlet var shadowViews: [UIView]!
+    @IBOutlet weak var topButton: UIButton!
+    
+    @IBOutlet weak var blurView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +32,14 @@ class DetailsViewController: UIViewController {
     func setCornerRadius() {
         infoView.layer.cornerRadius = 50
         infoView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        blurView.layer.cornerRadius = 15
+        topButton.layer.cornerRadius = 2
     }
     
     func setShadow() {
         for shadowView in shadowViews {
-            shadowView.layer.shadowColor = UIColor.label.cgColor
+            shadowView.layer.shadowColor = UIColor.systemGray4.cgColor
             shadowView.layer.shadowOpacity = 0.2
             shadowView.layer.shadowOffset = .zero
             shadowView.layer.shadowRadius = 5

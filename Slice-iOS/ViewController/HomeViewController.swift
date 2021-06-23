@@ -9,6 +9,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var typeCollectionView: UICollectionView!
+    @IBOutlet weak var discountFoodCollectionView: UICollectionView!
+    @IBOutlet weak var favoriteFoodCollectionView: UICollectionView!
+    @IBOutlet weak var popularFoodCollectionView: UICollectionView!
+    
     let searchButton: UIButton = {
         let button = UIButton()
         button.setBackgroundImage(UIImage(systemName: "magnifyingglass"), for: .normal)
@@ -42,11 +47,6 @@ class HomeViewController: UIViewController {
         return button
     }()
     
-    @IBOutlet weak var typeCollectionView: UICollectionView!
-    @IBOutlet weak var discountFoodCollectionView: UICollectionView!
-    @IBOutlet weak var favoriteFoodCollectionView: UICollectionView!
-    @IBOutlet weak var popularFoodCollectionView: UICollectionView!
-    
     let widthScreen: CGFloat = {
         UIScreen.main.bounds.width
     }()
@@ -55,12 +55,17 @@ class HomeViewController: UIViewController {
         UIScreen.main.bounds.height
     }()
     
+    var token: String {
+        get {
+            return ""
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initialize()
     }
-    
     
 }
 
@@ -94,19 +99,25 @@ extension HomeViewController {
         )
         
         discountFoodCollectionView.register(
-            ItemCollectionCell.nib(),
-            forCellWithReuseIdentifier: ItemCollectionCell.identifier
+            HomeItemCollectionCell.nib(),
+            forCellWithReuseIdentifier: HomeItemCollectionCell.identifier
         )
         
         favoriteFoodCollectionView.register(
-            ItemCollectionCell.nib(),
-            forCellWithReuseIdentifier: ItemCollectionCell.identifier
+            HomeItemCollectionCell.nib(),
+            forCellWithReuseIdentifier: HomeItemCollectionCell.identifier
         )
         
         popularFoodCollectionView.register(
-            ItemCollectionCell.nib(),
-            forCellWithReuseIdentifier: ItemCollectionCell.identifier
+            HomeItemCollectionCell.nib(),
+            forCellWithReuseIdentifier: HomeItemCollectionCell.identifier
         )
+    }
+    
+    func saveToken() {
+        let userDefaults = UserDefaults.standard
+        
+//        userDefaults.setValue(<#T##value: Any?##Any?#>, forKey: <#T##String#>)
     }
 }
 
@@ -128,12 +139,12 @@ extension HomeViewController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TypeCollectionCell.identifier, for: indexPath) as! TypeCollectionCell
             
             cell.typeTitleLabel.text = "Pizza"
-            cell.typeImageView.image = UIImage(named: "salad")
+            cell.typeImageView.image = UIImage(named: "Slice")
             cell.layer.cornerRadius = 25
             return cell
         }
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionCell.identifier, for: indexPath) as! ItemCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeItemCollectionCell.identifier, for: indexPath) as! HomeItemCollectionCell
         cell.itemTitleLabel.text = "Pizza"
         cell.itemPriceLabel.text = "$93"
         cell.itemImageView.image = UIImage(named: "Slice")
@@ -147,8 +158,10 @@ extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == typeCollectionView {
             if let cell = collectionView.cellForItem(at: indexPath) as? TypeCollectionCell {
-                
+                print(indexPath.row)
             }
+        } else if collectionView == discountFoodCollectionView {
+            performSegue(withIdentifier: "goToDetails", sender: self)
         }
     }
     

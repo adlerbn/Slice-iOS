@@ -9,59 +9,90 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signInButton: CustomButton!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var emailTextField: CustomTextField!
     
-    @IBOutlet var textFields: [UITextField]!
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    var emailIsValid: Bool {
+        get {
+            if let text = emailTextField.text {
+                return Validator.isValidEmail(text)
+            } else {
+                return false
+            }
+        }
+    }
+    
+    var starterViewControllerDelegate: StarterViewControllerDelegate?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let verificationVC = segue.destination as! VerificationViewController
+        if segue.identifier == "goToVerification" {
+            verificationVC.email = emailTextField.text
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initializeUI()
-    }
-
-    func initializeUI() {
-        setShadowButton()
-    }
-    
-    func setShadowButton() {
-        signInButton.layer.shadowColor = UIColor.label.cgColor
-        signInButton.layer.shadowOpacity = 0.3
-        signInButton.layer.shadowOffset = .zero
-        signInButton.layer.shadowRadius = 3
+        initialize()
     }
 
 }
 
-//MARK: - UITextFieldDelegate
-extension LoginViewController: UITextFieldDelegate {
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        
-        switch textField {
-        case usernameTextField:
-            usernameTextField.tintColor = UIColor(named: "Color-1")
-        case passwordTextField:
-            passwordTextField.tintColor = UIColor(named: "Color-1")
-        default:
-            return true
-        }
-        
-        return true
+//MARK: - Help Methodes
+extension LoginViewController {
+    func initialize() {
+        addTarget()
+        emailTextField.configure()
+    }
+
+    func initializeUI() {
+        setShadow()
     }
     
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        
-        switch textField {
-        case usernameTextField:
-            usernameTextField.tintColor = UIColor.label
-        case passwordTextField:
-            passwordTextField.tintColor = UIColor.label
-        default:
-            return true
+    func setShadow() {
+        signInButton.layer.shadowColor = UIColor.systemGray4.cgColor
+        signInButton.layer.shadowOpacity = 0.3
+        signInButton.layer.shadowOffset = .zero
+        signInButton.layer.shadowRadius = 3
+    }
+    
+    func addTarget() {
+        registerButton.addTarget(self, action: #selector(goToRegisterViewController), for: .touchUpInside)
+    }
+    
+    @objc func goToRegisterViewController() {
+        print("dismissed")
+        navigationController?.popViewController(animated: true)
+        starterViewControllerDelegate?.goToRegisterViewController()
+    }
+    
+    func checkTextField(_ textField: UITextField) {
+        if let text = textField.text, !text.isEmpty, emailIsValid {
+            signInButton.enableButton()
+            emailTextField.clearErrorText()
+        } else {
+            signInButton.disableButton()
+            emailTextField.setErrorText(text: "Invalid")
         }
-        
-        return true
+    }
+    
+}
+
+//MARK: - UITextFieldDelegate
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        emailTextField.tintColor = UIColor(named: "Color-1")
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        emailTextField.tintColor = UIColor.label
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        checkTextField(textField)
     }
 }

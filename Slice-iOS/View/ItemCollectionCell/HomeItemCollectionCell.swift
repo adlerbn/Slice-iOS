@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ItemCollectionCell: UICollectionViewCell {
+class HomeItemCollectionCell: UICollectionViewCell {
     
-    static let identifier: String = "ItemCollectionCell"
+    static let identifier: String = "HomeItemCollectionCell"
     
     @IBOutlet weak var itemImageView: UIImageView!
     
@@ -20,7 +20,7 @@ class ItemCollectionCell: UICollectionViewCell {
     @IBOutlet weak var itemAddButton: UIButton!
     
     static func nib() -> UINib {
-        return UINib(nibName: "ItemCollectionCell", bundle: nil)
+        return UINib(nibName: "HomeItemCollectionCell", bundle: nil)
     }
 
     override func awakeFromNib() {

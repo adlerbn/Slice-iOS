@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4906782A2678E06D00772E48 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490678292678E06D00772E48 /* CustomTextField.swift */; };
+		490C6B282682137300F1DE0C /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C6B272682137300F1DE0C /* VerificationViewController.swift */; };
 		491688A62674AAA100107EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491688A52674AAA100107EE3 /* AppDelegate.swift */; };
 		491688A82674AAA100107EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491688A72674AAA100107EE3 /* SceneDelegate.swift */; };
 		491688AA2674AAA100107EE3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491688A92674AAA100107EE3 /* RegisterViewController.swift */; };
@@ -15,19 +15,29 @@
 		491688B02674AAA100107EE3 /* Slice_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 491688AE2674AAA100107EE3 /* Slice_iOS.xcdatamodeld */; };
 		491688B22674AAA300107EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491688B12674AAA300107EE3 /* Assets.xcassets */; };
 		491688B52674AAA300107EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491688B32674AAA300107EE3 /* LaunchScreen.storyboard */; };
+		4916D95426806753004CF657 /* Lalezar.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4916D95326806753004CF657 /* Lalezar.ttf */; };
+		4916D957268072B1004CF657 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916D956268072B1004CF657 /* ApiManager.swift */; };
+		4921D99826828AD200B37F71 /* error-email.json in Resources */ = {isa = PBXBuildFile; fileRef = 4921D99526828AD200B37F71 /* error-email.json */; };
+		4921D99926828AD200B37F71 /* send-email.json in Resources */ = {isa = PBXBuildFile; fileRef = 4921D99626828AD200B37F71 /* send-email.json */; };
 		4927550E2674E6FE001C1B2C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927550D2674E6FE001C1B2C /* HomeViewController.swift */; };
 		4927551B2674E8A0001C1B2C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927551A2674E8A0001C1B2C /* DetailsViewController.swift */; };
 		4927551F267506E6001C1B2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927551E267506E6001C1B2C /* LoginViewController.swift */; };
-		492AC92B26772B1A00EB4524 /* ItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AC92926772B1A00EB4524 /* ItemCollectionCell.swift */; };
-		492AC92C26772B1A00EB4524 /* ItemCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492AC92A26772B1A00EB4524 /* ItemCollectionCell.xib */; };
+		492AC92B26772B1A00EB4524 /* HomeItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AC92926772B1A00EB4524 /* HomeItemCollectionCell.swift */; };
+		492AC92C26772B1A00EB4524 /* HomeItemCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492AC92A26772B1A00EB4524 /* HomeItemCollectionCell.xib */; };
+		492D7A222680EBF700E17226 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D7A212680EBF700E17226 /* UIViewController+Extension.swift */; };
+		492F21EF2682FCD200240191 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 492F21EE2682FCD200240191 /* loading.json */; };
 		493384C926750786005578CD /* StarterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493384C826750786005578CD /* StarterViewController.swift */; };
+		4942EED526831904003358A2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942EED426831904003358A2 /* CustomButton.swift */; };
+		4942EED926831CC3003358A2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942EED826831CC3003358A2 /* CustomTextField.swift */; };
+		4942EEDC26831D9F003358A2 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942EEDB26831D9F003358A2 /* Validator.swift */; };
 		495EDCF72675549F000F9489 /* TypeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EDCF52675549F000F9489 /* TypeCollectionCell.swift */; };
 		495EDCF82675549F000F9489 /* TypeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495EDCF62675549F000F9489 /* TypeCollectionCell.xib */; };
+		49FC43232683D29600767F3F /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC43222683D29600767F3F /* SearchTableViewController.swift */; };
 		73DE2C383EB7FFF117F05521 /* Pods_Slice_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6863D9CEE44AF40CC526B61A /* Pods_Slice_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		490678292678E06D00772E48 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		490C6B272682137300F1DE0C /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		491688A22674AAA100107EE3 /* Slice-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slice-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		491688A52674AAA100107EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491688A72674AAA100107EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,14 +47,24 @@
 		491688B12674AAA300107EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491688B42674AAA300107EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491688B62674AAA300107EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4916D95326806753004CF657 /* Lalezar.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lalezar.ttf; sourceTree = "<group>"; };
+		4916D956268072B1004CF657 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		4921D99526828AD200B37F71 /* error-email.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "error-email.json"; sourceTree = "<group>"; };
+		4921D99626828AD200B37F71 /* send-email.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "send-email.json"; sourceTree = "<group>"; };
 		4927550D2674E6FE001C1B2C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4927551A2674E8A0001C1B2C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		4927551E267506E6001C1B2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		492AC92926772B1A00EB4524 /* ItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionCell.swift; sourceTree = "<group>"; };
-		492AC92A26772B1A00EB4524 /* ItemCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionCell.xib; sourceTree = "<group>"; };
+		492AC92926772B1A00EB4524 /* HomeItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCollectionCell.swift; sourceTree = "<group>"; };
+		492AC92A26772B1A00EB4524 /* HomeItemCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeItemCollectionCell.xib; sourceTree = "<group>"; };
+		492D7A212680EBF700E17226 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		492F21EE2682FCD200240191 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		493384C826750786005578CD /* StarterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewController.swift; sourceTree = "<group>"; };
+		4942EED426831904003358A2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4942EED826831CC3003358A2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4942EEDB26831D9F003358A2 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		495EDCF52675549F000F9489 /* TypeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionCell.swift; sourceTree = "<group>"; };
 		495EDCF62675549F000F9489 /* TypeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCollectionCell.xib; sourceTree = "<group>"; };
+		49FC43222683D29600767F3F /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		6863D9CEE44AF40CC526B61A /* Pods_Slice_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slice_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8391EDA73FB77AFF70EA77E7 /* Pods-Slice-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slice-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Slice-iOS/Pods-Slice-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E54267535DA190A27AAD925D /* Pods-Slice-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slice-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Slice-iOS/Pods-Slice-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,14 +82,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		490678282678E04B00772E48 /* CustomTextField */ = {
-			isa = PBXGroup;
-			children = (
-				490678292678E06D00772E48 /* CustomTextField.swift */,
-			);
-			path = CustomTextField;
-			sourceTree = "<group>";
-		};
 		491688992674AAA100107EE3 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +102,8 @@
 		491688A42674AAA100107EE3 /* Slice-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4921D98B2682818F00B37F71 /* JSON */,
+				4916D9522680673D004CF657 /* Fonts */,
 				491688A52674AAA100107EE3 /* AppDelegate.swift */,
 				491688A72674AAA100107EE3 /* SceneDelegate.swift */,
 				492755142674E734001C1B2C /* Model */,
@@ -99,8 +113,27 @@
 				491688B62674AAA300107EE3 /* Info.plist */,
 				DBBEFF9BD061138B887EFC23 /* Pods */,
 				491688AE2674AAA100107EE3 /* Slice_iOS.xcdatamodeld */,
+				492D7A212680EBF700E17226 /* UIViewController+Extension.swift */,
 			);
 			path = "Slice-iOS";
+			sourceTree = "<group>";
+		};
+		4916D9522680673D004CF657 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4916D95326806753004CF657 /* Lalezar.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4921D98B2682818F00B37F71 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				4921D99526828AD200B37F71 /* error-email.json */,
+				492F21EE2682FCD200240191 /* loading.json */,
+				4921D99626828AD200B37F71 /* send-email.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		492755122674E713001C1B2C /* ViewController */ = {
@@ -109,8 +142,10 @@
 				493384C826750786005578CD /* StarterViewController.swift */,
 				4927551E267506E6001C1B2C /* LoginViewController.swift */,
 				491688A92674AAA100107EE3 /* RegisterViewController.swift */,
+				490C6B272682137300F1DE0C /* VerificationViewController.swift */,
 				4927550D2674E6FE001C1B2C /* HomeViewController.swift */,
 				4927551A2674E8A0001C1B2C /* DetailsViewController.swift */,
+				49FC43222683D29600767F3F /* SearchTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -118,11 +153,12 @@
 		492755132674E72C001C1B2C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				490678282678E04B00772E48 /* CustomTextField */,
 				491688AB2674AAA100107EE3 /* Main.storyboard */,
 				491688B32674AAA300107EE3 /* LaunchScreen.storyboard */,
 				495EDCFA267554A9000F9489 /* TypeCollectionCell */,
 				492AC92626772AB400EB4524 /* ItemCollectionCell */,
+				4942EED726831CAB003358A2 /* CustomTextFields */,
+				4942EED3268318B4003358A2 /* CustomButton */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +166,8 @@
 		492755142674E734001C1B2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4916D956268072B1004CF657 /* ApiManager.swift */,
+				4942EEDB26831D9F003358A2 /* Validator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,10 +175,26 @@
 		492AC92626772AB400EB4524 /* ItemCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
-				492AC92926772B1A00EB4524 /* ItemCollectionCell.swift */,
-				492AC92A26772B1A00EB4524 /* ItemCollectionCell.xib */,
+				492AC92926772B1A00EB4524 /* HomeItemCollectionCell.swift */,
+				492AC92A26772B1A00EB4524 /* HomeItemCollectionCell.xib */,
 			);
 			path = ItemCollectionCell;
+			sourceTree = "<group>";
+		};
+		4942EED3268318B4003358A2 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				4942EED426831904003358A2 /* CustomButton.swift */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		4942EED726831CAB003358A2 /* CustomTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				4942EED826831CC3003358A2 /* CustomTextField.swift */,
+			);
+			path = CustomTextFields;
 			sourceTree = "<group>";
 		};
 		495EDCFA267554A9000F9489 /* TypeCollectionCell */ = {
@@ -230,9 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				491688B52674AAA300107EE3 /* LaunchScreen.storyboard in Resources */,
-				492AC92C26772B1A00EB4524 /* ItemCollectionCell.xib in Resources */,
+				492F21EF2682FCD200240191 /* loading.json in Resources */,
+				492AC92C26772B1A00EB4524 /* HomeItemCollectionCell.xib in Resources */,
+				4916D95426806753004CF657 /* Lalezar.ttf in Resources */,
 				495EDCF82675549F000F9489 /* TypeCollectionCell.xib in Resources */,
+				4921D99826828AD200B37F71 /* error-email.json in Resources */,
 				491688B22674AAA300107EE3 /* Assets.xcassets in Resources */,
+				4921D99926828AD200B37F71 /* send-email.json in Resources */,
 				491688AD2674AAA100107EE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,16 +343,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4942EEDC26831D9F003358A2 /* Validator.swift in Sources */,
 				4927551F267506E6001C1B2C /* LoginViewController.swift in Sources */,
-				4906782A2678E06D00772E48 /* CustomTextField.swift in Sources */,
+				492D7A222680EBF700E17226 /* UIViewController+Extension.swift in Sources */,
 				4927550E2674E6FE001C1B2C /* HomeViewController.swift in Sources */,
-				492AC92B26772B1A00EB4524 /* ItemCollectionCell.swift in Sources */,
+				492AC92B26772B1A00EB4524 /* HomeItemCollectionCell.swift in Sources */,
+				4942EED526831904003358A2 /* CustomButton.swift in Sources */,
 				493384C926750786005578CD /* StarterViewController.swift in Sources */,
 				491688B02674AAA100107EE3 /* Slice_iOS.xcdatamodeld in Sources */,
 				491688AA2674AAA100107EE3 /* RegisterViewController.swift in Sources */,
 				491688A62674AAA100107EE3 /* AppDelegate.swift in Sources */,
 				491688A82674AAA100107EE3 /* SceneDelegate.swift in Sources */,
+				4942EED926831CC3003358A2 /* CustomTextField.swift in Sources */,
 				4927551B2674E8A0001C1B2C /* DetailsViewController.swift in Sources */,
+				4916D957268072B1004CF657 /* ApiManager.swift in Sources */,
+				49FC43232683D29600767F3F /* SearchTableViewController.swift in Sources */,
+				490C6B282682137300F1DE0C /* VerificationViewController.swift in Sources */,
 				495EDCF72675549F000F9489 /* TypeCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
