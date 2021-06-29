@@ -8,11 +8,6 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Lalezar.ttf">
-            <string>Lalezar-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -22,28 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="JdR-F8-c9T">
-                                <rect key="frame" x="33" y="313" width="348" height="270"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slice" translatesAutoresizingMaskIntoConstraints="NO" id="NyW-S1-7lo">
-                                        <rect key="frame" x="0.0" y="0.0" width="348" height="179"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qh3-I2-3ao">
-                                        <rect key="frame" x="0.0" y="179" width="348" height="91"/>
-                                        <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="58"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slice" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-H1-SlP">
+                                <rect key="frame" x="117.5" y="358.5" width="179" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fvI-H1-SlP" secondAttribute="height" multiplier="1:1" id="2ql-N2-6Jx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JdR-F8-c9T" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.84" id="BnU-1H-bwm"/>
-                            <constraint firstItem="NyW-S1-7lo" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.2" id="JbC-ep-KhK"/>
-                            <constraint firstItem="JdR-F8-c9T" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="idx-FQ-bPp"/>
-                            <constraint firstItem="JdR-F8-c9T" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xP6-hl-qVf"/>
+                            <constraint firstItem="fvI-H1-SlP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9w3-wB-MgH"/>
+                            <constraint firstItem="fvI-H1-SlP" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.2" id="Kvw-pY-cit"/>
+                            <constraint firstItem="fvI-H1-SlP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qSJ-eV-aoN"/>
                         </constraints>
                     </view>
                 </viewController>

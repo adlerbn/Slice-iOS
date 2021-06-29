@@ -13,12 +13,6 @@ class TypeCollectionCell: UICollectionViewCell {
     @IBOutlet weak var typeTitleLabel: UILabel!
     @IBOutlet weak var subView: UIView!
     
-    override var isHighlighted: Bool {
-        didSet {
-            
-        }
-    }
-    
     static let identifier: String = "TypeCollectionCell"
     
     static func nib() -> UINib {
